@@ -1,0 +1,81 @@
+﻿body{
+    font-size: 120%;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+h1{    
+    margin: 2% 0;
+}
+h1, form{
+    margin-left: 4%;
+    padding-left: 2%;
+}
+form{
+    border-left: 1px solid black;
+}
+h1{
+    width: 600px;
+    border-bottom: 20px solid gray;    
+}
+#InputField{
+    width: 350px;
+    height: 25px;
+    font-family: inherit;
+    font-size: inherit;
+}
+#CalcDiscount{
+    width: 150px;
+    height: 40px;
+    font-family: inherit;
+    font-size: inherit;
+}
+a{
+    background-color: yellow;
+    font-size: inherit;
+}
+#ErrorText{
+    color: red;
+}
+#ErrorCode{
+    font-size: 1.5em;
+}
+#receiptBox{
+    width: 250px;
+    margin: 4% 0 4% 6%;
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px gray;
+    text-align: center;
+}
+#receiptBox :nth-child(3), #receiptBox :nth-child(4){
+    border-top: 2px dashed gray;
+    margin-top: 2px;
+    padding-top: 10px;
+}
+#receiptBox :nth-child(9), #receiptBox :nth-child(10){
+    border-bottom: 2px dashed gray;
+    margin-top: 2px;
+    padding-bottom: 10px;
+}
+#receiptBox :nth-child(2n+3){
+    text-align: left;
+}
+#receiptBox :nth-child(2n+4){
+    text-align: right;
+}
+#ReceiptH1{
+    font-size: 1.5em;
+}
+#receiptBox div{
+    width: 50%;
+    float: left;
+}
+.HideThis{
+    visibility: hidden;
+}
+.ShowThis{
+    visibility: visible;
+}
+.red{
+    color: red;
+}
