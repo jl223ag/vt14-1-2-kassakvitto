@@ -1,6 +1,6 @@
 ﻿window.onload = function () {
 
-    var button = document.querySelector("#CalcDiscount");
+    var button = document.querySelector("#CalcDiscount");    
 
     window.onkeypress = function (e) {
         e = e || event;

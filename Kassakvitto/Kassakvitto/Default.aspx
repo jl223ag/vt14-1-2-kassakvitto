@@ -12,9 +12,10 @@
     <form id="form1" runat="server" method="post">
     <div>
         <p><asp:Label ID="InfoText" runat="server" Text="Fyll i total köpsumma:"></asp:Label></p>
-        <p><asp:TextBox ID="InputField" runat="server" autofocus="autofocus"></asp:TextBox> Kr</p>
+        <p><asp:TextBox ID="InputField" runat="server" autofocus="autofocus"></asp:TextBox> Kr</p>        
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Fältet får inte vara tomt!" ControlToValidate="InputField" Display="Dynamic" CssClass="red"></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Summan måste vara större än 0!" ControlToValidate="InputField" Display="Dynamic" Operator="GreaterThan" Type="Double" ValueToCompare="0" CssClass="red"></asp:CompareValidator>
+        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Du måste mata in ett tal större än 0!" ControlToValidate="InputField" Display="Dynamic" Operator="GreaterThan" Type="Double" ValueToCompare="0" CssClass="red"></asp:CompareValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="(punkt är inte tillåten, använd komma istället)" ControlToValidate="InputField" Display="Dynamic" CssClass="red" ValidationExpression="^[^\.]*$"></asp:RegularExpressionValidator>
         <p><asp:Label ID="ErrorText" runat="server" Text=""></asp:Label></p>        
         <p><asp:Button ID="CalcDiscount" runat="server" Text="Beräkna rabatt" OnClick="CalcDiscount_Click" /></p>
     </div>
@@ -32,6 +33,6 @@
         <div><asp:Label ID="ReceiptBody8" runat="server" Text=""></asp:Label></div>
         <asp:Label ID="ReceiptFooter" runat="server" Text=""></asp:Label>
     </asp:Panel>
-    <script src="script/script.js"></script>
+    <script src="Scripts/script.js"></script>
 </body>
 </html>

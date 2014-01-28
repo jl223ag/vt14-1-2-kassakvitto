@@ -30,6 +30,7 @@ h1{
 }
 a{
     background-color: yellow;
+    margin-left: 6%;
     font-size: inherit;
 }
 #ErrorText{
@@ -37,6 +38,7 @@ a{
 }
 #ErrorCode{
     font-size: 1.5em;
+    margin-left: 6%;
 }
 #receiptBox{
     width: 250px;
